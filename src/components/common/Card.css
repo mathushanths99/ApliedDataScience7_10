@@ -1,0 +1,81 @@
+.card-wrapper {
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+/* ---------------- Study Guide Variant ---------------- */
+.card-wrapper.study {
+  margin-bottom: 60px;
+  border-radius: 8px;
+}
+
+.card-wrapper.study .card-header {
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-wrapper.study.u7 .card-header { background: linear-gradient(90deg, #0a1a2e, #0d0f14); border-left: 4px solid var(--accent); }
+.card-wrapper.study.u8 .card-header { background: linear-gradient(90deg, #1a0a2e, #0d0f14); border-left: 4px solid var(--accent2); }
+.card-wrapper.study.u9 .card-header { background: linear-gradient(90deg, #0a2e0a, #0d0f14); border-left: 4px solid var(--accent3); }
+.card-wrapper.study.u10 .card-header { background: linear-gradient(90deg, #2e2a0a, #0d0f14); border-left: 4px solid var(--accent4); }
+
+.card-wrapper.study .unit-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.3;
+}
+.card-wrapper.study.u7 .unit-num { color: var(--accent); }
+.card-wrapper.study.u8 .unit-num { color: var(--accent2); }
+.card-wrapper.study.u9 .unit-num { color: var(--accent3); }
+.card-wrapper.study.u10 .unit-num { color: var(--accent4); }
+
+.card-wrapper.study h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 0;
+}
+
+.card-wrapper.study .subtitle { font-size: 13px; color: var(--muted); }
+
+.card-wrapper.study .card-body {
+  padding: 28px;
+  background: var(--surface);
+}
+
+/* ---------------- Cheat Sheet Variant ---------------- */
+.card-wrapper.cheat {
+  border-radius: 4px;
+  height: 100%;
+}
+
+.card-wrapper.cheat .card-header {
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.card-wrapper.cheat .num {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.card-wrapper.cheat.u7 .card-header { background: #001a20; border-left: 3px solid var(--u7); }
+.card-wrapper.cheat.u8 .card-header { background: #1a0005; border-left: 3px solid var(--u8); }
+.card-wrapper.cheat.u9 .card-header { background: #001a0a; border-left: 3px solid var(--u9); }
+.card-wrapper.cheat.u10 .card-header { background: #1a1400; border-left: 3px solid var(--u10); }
+
+.card-wrapper.cheat .card-body {
+  background: var(--card);
+  padding: 10px;
+}

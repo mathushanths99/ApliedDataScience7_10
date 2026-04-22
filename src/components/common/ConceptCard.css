@@ -1,0 +1,32 @@
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.concept-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.concept-card .card-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.concept-card.u7 .card-title { color: var(--accent); }
+.concept-card.u8 .card-title { color: var(--accent2); }
+.concept-card.u9 .card-title { color: var(--accent3); }
+.concept-card.u10 .card-title { color: var(--accent4); }
+
+.concept-card p {
+  font-size: 13.5px;
+  margin: 0;
+  color: var(--text);
+}

@@ -1,0 +1,26 @@
+:root {
+  /* Cheat Sheet Unit Colors */
+  --u7: #00bcd4;
+  --u8: #ff5252;
+  --u9: #69f0ae;
+  --u10: #ffd740;
+
+  /* Study Guide Colors (Merging to retain aesthetics) */
+  --accent: #4fc3f7;
+  --accent2: #f06292;
+  --accent3: #a5d6a7;
+  --accent4: #ffcc02;
+
+  /* Backgrounds & Surfaces */
+  --bg: #0d0f14;
+  --surface: #141720;
+  --surface2: #1c2030;
+  --card: #111318;
+  --border: #2a2f40;
+
+  /* Typography Colors */
+  --text: #e2e8f0;
+  --muted: #8892a4;
+  --heading: #ffffff;
+  --white: #f0f4ff;
+}

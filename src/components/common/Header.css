@@ -1,0 +1,112 @@
+.app-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+/* Study Guide Variant */
+.app-header.study {
+  background: linear-gradient(135deg, #0a0e1a 0%, #0d1929 50%, #0a1520 100%);
+  border-bottom: 2px solid var(--accent);
+  padding: 40px 60px;
+}
+
+.app-header.study::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(79,195,247,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.app-header.study .badge {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 3px 10px;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.app-header.study h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--heading);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.app-header.study .subtitle {
+  color: var(--muted);
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Cheat Sheet Variant */
+.app-header.cheat {
+  padding: 20px 20px 12px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 16px;
+  background: var(--bg);
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.app-header.cheat .header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header.cheat h1 {
+  font-size: 1.8em;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.5px;
+  margin-bottom: 0;
+}
+
+.app-header.cheat .subtitle {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.app-header.cheat .meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.8;
+}
+
+.app-header.cheat .meta span {
+  color: var(--white);
+}
+
+@media print {
+  .back-link {
+    display: none;
+  }
+}

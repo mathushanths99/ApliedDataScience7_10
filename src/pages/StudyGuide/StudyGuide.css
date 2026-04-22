@@ -1,0 +1,153 @@
+.study-page {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.study-nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 60px;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+}
+
+.study-nav a {
+  display: block;
+  padding: 14px 20px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.study-nav a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.study-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+}
+
+.study-main section {
+  scroll-margin-top: 40px;
+}
+
+.study-page h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 28px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.card-wrapper.study.u8 h3 { color: var(--accent2); }
+.card-wrapper.study.u9 h3 { color: var(--accent3); }
+.card-wrapper.study.u10 h3 { color: var(--accent4); }
+
+.study-page p {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.study-page ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.study-page li {
+  margin-bottom: 5px;
+}
+
+.study-page li strong {
+  color: var(--heading);
+}
+
+.study-formula {
+  background: #0a0d12;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin: 12px 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: #b8d4e8;
+  overflow-x: auto;
+}
+
+table.study-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 13.5px;
+}
+
+table.study-table th {
+  background: var(--surface2);
+  color: var(--heading);
+  font-weight: 600;
+  padding: 10px 14px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+table.study-table td {
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+
+table.study-table tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.study-footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .study-main {
+    padding: 20px 20px 60px;
+  }
+  
+  .study-nav,
+  .app-header.study {
+    padding: 20px;
+  }
+
+  .card-wrapper.study .card-header,
+  .qa-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media print {
+  .study-nav {
+    display: none;
+  }
+  .study-page {
+    background: white;
+    color: black;
+  }
+}

@@ -1,0 +1,109 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #111520 0%, #0d0f14 100%);
+  padding: 40px 20px;
+}
+
+.home-content {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, var(--accent), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 60px;
+}
+
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+  text-align: center;
+}
+
+.nav-card:hover {
+  transform: translateY(-8px);
+}
+
+.nav-icon {
+  margin-bottom: 24px;
+}
+
+.nav-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.nav-card p {
+  color: var(--text);
+  margin-bottom: 30px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.nav-action {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+/* Study Guide Card Coloring */
+.study-variant {
+  border-bottom: 4px solid var(--accent);
+}
+
+.study-variant .nav-icon {
+  color: var(--accent);
+}
+
+.study-variant:hover {
+  box-shadow: 0 10px 30px -10px rgba(79, 195, 247, 0.2);
+}
+
+.study-variant .nav-action {
+  color: var(--accent);
+}
+
+/* Cheat Sheet Card Coloring */
+.cheat-variant {
+  border-bottom: 4px solid var(--accent2);
+}
+
+.cheat-variant .nav-icon {
+  color: var(--accent2);
+}
+
+.cheat-variant:hover {
+  box-shadow: 0 10px 30px -10px rgba(240, 98, 146, 0.2);
+}
+
+.cheat-variant .nav-action {
+  color: var(--accent2);
+}

@@ -1,0 +1,116 @@
+.qa-section {
+  margin-top: 40px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.qa-header {
+  background: linear-gradient(90deg, #0d1a0d, #0d0f14);
+  border-left: 4px solid #69f0ae;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qa-header h2 {
+  font-size: 1.3em;
+  color: var(--heading);
+  margin-bottom: 0;
+}
+
+.qa-header span {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #69f0ae;
+  font-size: 22px;
+  opacity: 0.5;
+}
+
+.qa-body {
+  padding: 28px;
+  background: var(--surface);
+}
+
+.qa-item {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.question {
+  background: var(--surface2);
+  padding: 14px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.question:hover {
+  background: #222840;
+}
+
+.question .q-text {
+  font-weight: 600;
+  color: var(--heading);
+  font-size: 14px;
+  flex: 1;
+}
+
+.question .q-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.question.mcq .q-tag { background: rgba(79,195,247,0.15); color: var(--accent); border: 1px solid rgba(79,195,247,0.3); }
+.question.text .q-tag { background: rgba(240,98,146,0.15); color: var(--accent2); border: 1px solid rgba(240,98,146,0.3); }
+
+.toggle {
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.answer {
+  display: none;
+  padding: 16px 20px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.answer.open {
+  display: block;
+}
+
+.ans-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #69f0ae;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.answer p {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.answer strong {
+  color: #69f0ae;
+}
+
+@media print {
+  .answer {
+    display: block !important;
+  }
+}
